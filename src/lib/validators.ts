@@ -1,0 +1,3 @@
+export function isEmail(s: string) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s)
+}
