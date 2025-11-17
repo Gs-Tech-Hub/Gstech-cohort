@@ -1,10 +1,10 @@
-import { Suspense } from "react"
-import ApplyPage from "./ApplyPage"
+import React, { Suspense } from 'react'
+import ApplyPageClient from './ApplyPageClient'
 
 export default function Page() {
   return (
-    <Suspense fallback={<div className="p-10"></div>}>
-      <ApplyPage />
+    <Suspense fallback={null}>
+      <ApplyPageClient />
     </Suspense>
   )
 }
