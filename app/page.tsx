@@ -236,7 +236,7 @@ export default function HomePage() {
 
       {/* 7. UPCOMING PROJECTS */}
       <Reveal>
-        <section className="mx-auto py-24 px-30 bg-[var(--bg-secondary)] dark:bg-[var(--bg-secondary)]">
+        <section className="mx-auto py-24 px-16 bg-[var(--bg-secondary)] dark:bg-[var(--bg-secondary)]">
           <h2 className="text-4xl font-bold mb-16 relative inline-block pb-3">
             Upcoming <span className="text-[var(--primary)]">Projects</span>
             <span className="absolute left-0 bottom-0 w-28 h-[4px] bg-[var(--primary)]"></span>
