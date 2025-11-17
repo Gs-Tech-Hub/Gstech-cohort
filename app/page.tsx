@@ -234,7 +234,6 @@ export default function HomePage() {
         </section>
       </Reveal>
 
-
       {/* 8. MENTORS PREVIEW */}
       <Reveal>
         <section className="max-w-[1200px] mx-auto py-24 px-6">
