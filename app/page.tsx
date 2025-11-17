@@ -234,44 +234,6 @@ export default function HomePage() {
         </section>
       </Reveal>
 
-      {/* 7. UPCOMING PROJECTS */}
-      <Reveal>
-        <section className="mx-auto py-24 px-10 bg-[var(--bg-secondary)] dark:bg-[var(--bg-secondary)]">
-          <h2 className="text-4xl font-bold mb-16 relative inline-block pb-3">
-            Upcoming <span className="text-[var(--primary)]">Projects</span>
-            <span className="absolute left-0 bottom-0 w-28 h-[4px] bg-[var(--primary)]"></span>
-            <span className="absolute left-0 bottom-[-7px] w-16 h-[var(--primary)]/50"></span>
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {upcomingProjects.map((project, i) => (
-              <Reveal delay={i * 0.1} key={project.id}>
-                <div
-                  className="
-                    p-6
-                    bg-white/10 dark:bg-[#0b1220]/20
-                    rounded-xl
-                    border border-[var(--primary)]/30 dark:border-[var(--primary)]/25
-                    shadow-sm hover:shadow-md
-                    transition-all duration-300
-                    hover:-translate-y-1
-                    flex flex-col justify-between
-                    h-full
-                  "
-                >
-                  <div className="text-lg font-semibold text-[var(--text-primary)] relative mb-3">
-                    {project.title}
-                    <span className="absolute left-0 bottom-0 w-16 h-1 bg-[var(--primary)] rounded-full"></span>
-                  </div>
-                  <p className="text-sm text-[var(--text-secondary)] leading-relaxed mt-2">
-                    {project.description}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </section>
-      </Reveal>
 
       {/* 8. MENTORS PREVIEW */}
       <Reveal>
