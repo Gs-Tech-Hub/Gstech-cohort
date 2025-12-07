@@ -35,8 +35,8 @@ export default function Footer() {
             <h5 className="text-lg font-semibold mb-3 text-[var(--text-primary)]">Contact</h5>
             <ul className="space-y-2 text-[var(--text-secondary)] text-sm">
               <li>Email: <a href="mailto:info@gstechhub.com" className="hover:text-[var(--primary)] transition-colors">info@gstechhub.com</a></li>
-              <li>Phone: <a href="tel:+2348000000000" className="hover:text-[var(--primary)] transition-colors">+234 800 000 0000</a></li>
-              <li>Address: XXX, XXX, Nigeria</li>
+              <li>Phone: <a href="tel:+2348155619895" className="hover:text-[var(--primary)] transition-colors">+234 815 561 9895</a></li>
+              <li>Address: Agbor, Delta State, Nigeria</li>
             </ul>
           </div>
 

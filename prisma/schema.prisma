@@ -1,0 +1,54 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+        
+
+model User {
+	id        Int      @id @default(autoincrement())
+	email     String   @unique
+	password  String
+	name      String
+	createdAt DateTime @default(now())
+	registrations Registration[]
+}
+
+model Program {
+	id          Int      @id @default(autoincrement())
+	title       String
+	description String
+	startDate   DateTime
+	endDate     DateTime
+	createdAt   DateTime @default(now())
+	registrations Registration[]
+}
+
+model Registration {
+	id        Int      @id @default(autoincrement())
+	user      User     @relation(fields: [userId], references: [id])
+	userId    Int
+	program   Program  @relation(fields: [programId], references: [id])
+	programId Int
+	registeredAt DateTime @default(now())
+}
+
+model Application {
+	id           Int      @id @default(autoincrement())
+	name         String
+	email        String
+	phone        String?
+	program      String?
+	role         String
+	startupName  String?
+	stage        String?
+	website      String?
+	message      String
+	pitchFileName String?
+	createdAt    DateTime @default(now())
+}

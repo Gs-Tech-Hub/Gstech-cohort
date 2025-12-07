@@ -43,14 +43,14 @@ export default function ContactPage() {
 
                 <div>
                   <div className="font-semibold text-[var(--primary)]">Phone</div>
-                  <a href="tel:+2348000000000" className="hover:text-[var(--primary)] transition">
-                    +234 800 000 0000
+                  <a href="tel:+2348155619895" className="hover:text-[var(--primary)] transition">
+                    +234 815 561 9895
                   </a>
                 </div>
 
                 <div>
                   <div className="font-semibold text-[var(--primary)]">Address</div>
-                  <p>Port Harcourt, Rivers State, Nigeria</p>
+                  <p>Agbor, Delta State, Nigeria</p>
                 </div>
               </div>
             </div>
