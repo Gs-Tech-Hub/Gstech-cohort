@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+  environment = { NODE_VERSION = "20.11.0" }
+
+[build.environment]
+  # Ensure lightningcss native binaries are properly installed
+  npm_flags = "--legacy-peer-deps"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
